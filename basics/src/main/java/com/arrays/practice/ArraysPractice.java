@@ -24,4 +24,36 @@ public class ArraysPractice {
 		System.out.println(array.length);
 	}
 
+	@Test
+	public void stringArray() {
+		String[] array = new String[10];
+		ArraysPractice[] array2 = new ArraysPractice[10];
+
+	}
+
+	@Test
+	public void iterateArray() {
+		int[] intArray3 = { 1, 2, 3, 4, 5, 6, 7 }; // access elements using index
+		for (int i = 0; i < intArray3.length; i++) {
+			System.out.println(intArray3[i]);
+		}
+
+		for (int i : intArray3) { // access elements directly
+			System.out.println(i);
+
+		}
+
+		int i = 0;
+		while (i < intArray3.length) {
+			System.out.println(intArray3[i]);
+			i++;
+		}
+
+		int j = 0;
+		do {
+			System.out.println(intArray3[j]);
+			j++;
+		} while (j < intArray3.length);
+	}
+
 }
